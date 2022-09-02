@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "3f559096-e6a4-43b0-8a7b-655e4ae4e7fb",
+		"name": "GNew",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": " XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Demo One\",\r\n    \"email\": \"demo1@gmail.com\",\r\n    \"password\": \"demo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://gnew_laravel.test/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"gnew_laravel",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYWZjMmRhMzgzN2E4ZjlmMDQwZDMxNDUxZGM1ODQ5MzJkMjRlYjg5ZGRiNGJjZTMzOTJjNTA0NzA5NTRkNDU1Y2NhNjVkNGI4NTA3ZDJmYzEiLCJpYXQiOjE2NjIwODg1MjcuNzM3OTgzLCJuYmYiOjE2NjIwODg1MjcuNzM3OTkxLCJleHAiOjE2OTM2MjQ1MjcuNzMxMSwic3ViIjoiMiIsInNjb3BlcyI6W119.H8MI8lIPqqChMXdgiLzClbVHDCYTJhiEN2UXH2qOsTiIOnt3u5yPO98LyVG7B2ayRqy-uZlUR1Fj1CbO2WLg_3pJgbqvYRu4jwDW7xQeXFWkUhzHif6xr7ZQAIadzoQvQr-8ed1AQ7qohN305cpqcmxOTRYlAm7tN21wiTdJtltGTF_3BdorL7tPAGALsYKwSM0QE3KzeD3QPeqLcZ63FHhHR0rLZkF45N62SrU0wWd7q2g0DBMTRQzDqeNfoFbc_SmHOJETnCTybjM65OAyAbwBXxMvv1-Wdz--01bV1OhFDSx8PZp_Rbq1tNebFXX639gfsylQVuDyhQgVuT6zog1EbcyIZkGRQUNACg5pKpY17--dwvs-ZafupHGKVvW9JCdl-k2edyZe6ZDHEHWAkMyv5eM0TaYEpn0qsVmV2eMi3joMJli9ngMQTnY8I4btXeI8u9Noik_d6ttj3mx_A9xiNuLINBkdbMooz6dYbF9u7GQpS-AaDdedfPBSPXhFyg3dKayr6P8wl1QFJvMJXqQM6ilyFlvdNAS4nVGqa4Ig0RsAqUuRtnj6fVFTXxZxFDH0JBUf12GDSYMU9caTmCkxFhSEcJO-nWypO1JEP1q424Ekbubchg5_LAS9nbD7F3w7Xy6z11Wr3nW4wTam9j1r1J48HD2_vOh_TMYYK-U",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": " XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://gnew_laravel.test/api/auth/user",
+					"protocol": "http",
+					"host": [
+						"gnew_laravel",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": " XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"demo1@gmail.com\",\r\n    \"password\": \"demo\",\r\n    \"remember_me\": true\r\n}"
+				},
+				"url": {
+					"raw": "http://gnew_laravel.test/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"gnew_laravel",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDA4YWE0Y2RkMjQwMzQ1N2QzOTdkMTQyNjVjYzdhMmY2ZDdhNTA5ZDhlOGNiYzk4ZWNlZjcwYmY0ZGI2MmZlOWI4NTkwNTRjYjQ1NGQ2ZTciLCJpYXQiOjE2NjIwODgzNzguMjY0MzEsIm5iZiI6MTY2MjA4ODM3OC4yNjQzMTUsImV4cCI6MTY5MzYyNDM3OC4yNTcxMzMsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.MEB_U0rOxA_S6u2o0vFT9TZH6AVFbSwHTlgBmT0qGKVPGCwIpyHZQ-SeQaVqBZNvDwc2bZi_6m8JLVNGC0anq--BPOXZo2FmMJy7vEFL7pMaNUC3er1fjnC5ccM3qAcq3iVAayPh6yJCye3Vqn1PXH4p448jdTJX07SSzyzEWE_naUBhKj_7rzRPe20QdW0lXsQV3O4yjcEh4R6UyOuSksnyELC2zZbGmnAgv7XAiMenBQ-XE6G5xHFXI9l7H1R9khfvi_irn-kaSzpXUQ9n-oE_WZJbAzzSEOihrH8BDXIPNJa-k8Lx84F1i3pEVxVqNkrL0VjpPs8YNBFNiZ0LNMyJN6FEx1f9vwnRDKwGf0kfJ7C1Zp7ojjNq482zu8GxBYhzACPgyq0Q3I-zXh0J9-AWwZ0NqUIBEF7dZsq8GFfKfB7ciuEMvN6GkAZCaE-fEGZBr67StbHMptjMZgJEIZWD3o0G_DDPBrSqx4G6hHMYFDKPBYsfg_EMJVgUHV8QQ7hjs9TddA4qusMUIswkb0UANR_vrUQ5ou0b6kNU-HtBkxIMbKxMlLZbrZUH0vZ69odWi_HFBzDeMPajM9YTwRluFrImmHcXVHZLmSsGxulqY-oYkuq4mY308DaRvPXt4BzWCGNWrQ-yiLs8asEoCl7T18h-fA9tX4f8K6ufOi0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": " XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://gnew_laravel.test/api/auth/logout",
+					"protocol": "http",
+					"host": [
+						"gnew_laravel",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYWZjMmRhMzgzN2E4ZjlmMDQwZDMxNDUxZGM1ODQ5MzJkMjRlYjg5ZGRiNGJjZTMzOTJjNTA0NzA5NTRkNDU1Y2NhNjVkNGI4NTA3ZDJmYzEiLCJpYXQiOjE2NjIwODg1MjcuNzM3OTgzLCJuYmYiOjE2NjIwODg1MjcuNzM3OTkxLCJleHAiOjE2OTM2MjQ1MjcuNzMxMSwic3ViIjoiMiIsInNjb3BlcyI6W119.H8MI8lIPqqChMXdgiLzClbVHDCYTJhiEN2UXH2qOsTiIOnt3u5yPO98LyVG7B2ayRqy-uZlUR1Fj1CbO2WLg_3pJgbqvYRu4jwDW7xQeXFWkUhzHif6xr7ZQAIadzoQvQr-8ed1AQ7qohN305cpqcmxOTRYlAm7tN21wiTdJtltGTF_3BdorL7tPAGALsYKwSM0QE3KzeD3QPeqLcZ63FHhHR0rLZkF45N62SrU0wWd7q2g0DBMTRQzDqeNfoFbc_SmHOJETnCTybjM65OAyAbwBXxMvv1-Wdz--01bV1OhFDSx8PZp_Rbq1tNebFXX639gfsylQVuDyhQgVuT6zog1EbcyIZkGRQUNACg5pKpY17--dwvs-ZafupHGKVvW9JCdl-k2edyZe6ZDHEHWAkMyv5eM0TaYEpn0qsVmV2eMi3joMJli9ngMQTnY8I4btXeI8u9Noik_d6ttj3mx_A9xiNuLINBkdbMooz6dYbF9u7GQpS-AaDdedfPBSPXhFyg3dKayr6P8wl1QFJvMJXqQM6ilyFlvdNAS4nVGqa4Ig0RsAqUuRtnj6fVFTXxZxFDH0JBUf12GDSYMU9caTmCkxFhSEcJO-nWypO1JEP1q424Ekbubchg5_LAS9nbD7F3w7Xy6z11Wr3nW4wTam9j1r1J48HD2_vOh_TMYYK-U",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": " XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://gnew_laravel.test/api/gnews/news",
+					"protocol": "http",
+					"host": [
+						"gnew_laravel",
+						"test"
+					],
+					"path": [
+						"api",
+						"gnews",
+						"news"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Apple",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
